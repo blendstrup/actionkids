@@ -1,0 +1,62 @@
+name: actionkids
+description: En digital udgave af Action Kids!
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_riverpod: ^0.14.0+2
+  numberpicker: ^2.1.1
+  just_audio: ^0.7.4
+  octo_image: ^1.0.0+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.9.0
+  flutter_native_splash: ^1.1.8+4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/bondegaard_images/
+    - assets/audio/bondegaard/
+
+  fonts:
+    - family: OpenSans
+      fonts:
+        - asset: assets/fonts/OpenSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/OpenSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/OpenSans-ExtraBold.ttf
+          weight: 800
+
+flutter_icons:
+  # flutter pub run flutter_launcher_icons:main
+  android: true
+  ios: true
+  image_path: assets/icon/icon.png
+  adaptive_icon_background: '#0274BE'
+  adaptive_icon_foreground: assets/icon/adaptive_foreground.png
+
+flutter_native_splash:
+  # flutter pub run flutter_native_splash:create
+
+  color: '#F3F4F9'
+  color_dark: '#2B2B2B'
+  #background_image: "assets/background.png"
+  #background_image_dark: "assets/dark-background.png"
+
+  image: assets/splash/splash.png
+  #image_dark: assets/splash-invert.png
